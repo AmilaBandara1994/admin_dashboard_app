@@ -26,9 +26,9 @@ const Item = ({title, to, icon, selected, setSelected})=>{
         style={{color: colors.gray[100]}} 
         onClick={()=> setSelected(title)}
         icon={icon}
+        component={<Link to={to} />}
         >
       <Typography> {title} </Typography>
-      <Link to={to}/>
     </MenuItem>
   )
 
